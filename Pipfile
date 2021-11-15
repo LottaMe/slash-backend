@@ -12,6 +12,7 @@ django = "*"
 python-dotenv = "*"
 psycopg2 = "*"
 django-rest-passwordreset = "*"
+gunicorn = "*"
 
 [dev-packages]
 

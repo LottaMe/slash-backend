@@ -1,6 +1,8 @@
 import os
 from pathlib import Path
 from dotenv import load_dotenv
+import django_heroku
+django_heroku.settings(locals())
 
 load_dotenv()
 
