@@ -17,9 +17,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.environ.get("SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['notaslashwebsite.herokuapp.com', '127.0.0.1:8000', 'localhost']
+
 
 
 # Application definition
@@ -118,6 +119,7 @@ DATABASES = {
         'PASSWORD': os.environ.get("DB_PASSWORD"),
         'HOST': 'localhost',
         'PORT': '5432',
+        'CONN_MAX_AGE': 500
     }
 
 }
